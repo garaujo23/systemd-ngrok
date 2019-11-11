@@ -10,8 +10,6 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-git clone https://github.com/garaujo23/systemd-ngrok.git
-cd systemd-ngrok
 cp ngrok.service /lib/systemd/system/
 mkdir -p /opt/ngrok
 cp ngrok.yml /opt/ngrok
