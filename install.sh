@@ -10,7 +10,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-git clone https://github.com/vincenthsu/systemd-ngrok.git
+git clone https://github.com/garaujo23/systemd-ngrok.git
 cd systemd-ngrok
 cp ngrok.service /lib/systemd/system/
 mkdir -p /opt/ngrok
@@ -18,8 +18,8 @@ cp ngrok.yml /opt/ngrok
 sed -i "s/<add_your_token_here>/$1/g" /opt/ngrok/ngrok.yml
 
 cd /opt/ngrok
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-unzip ngrok-stable-linux-amd64.zip
+wget https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-2.2.8-linux-arm64.zip
+unzip ngrok-2.2.8-linux-arm64.zip
 
 chmod +x ngrok
 

@@ -1,5 +1,5 @@
 authtoken: <add_your_token_here>
-# region: ap
+region: au
 tunnels:
   ssh:
     proto: tcp
